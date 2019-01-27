@@ -1,4 +1,4 @@
-if ("pvm" %in% rownames(installed.packages())) local({
+if ("pvm" %in% rownames(utils::installed.packages())) local({
   R.version <- sprintf("%s.%s", R.version$major, R.version$minor)
   cat(sprintf("R.version is %s\n", R.version))
   R.date <- pvm::R.release.dates[R.version] + 7
